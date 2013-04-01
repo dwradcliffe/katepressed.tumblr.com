@@ -8,8 +8,6 @@
 
   <title>{Title}{block:PostSummary} | {PostSummary}{/block:PostSummary}{block:SearchPage} | {lang:Search results for SearchQuery}{/block:SearchPage}</title> 
   <meta name="description" content="{MetaDescription}" />
-  <meta name="if:Show description" content="1" />  
-  <meta name="if:Show search" content="1" />
   <meta name="text:Twitter name" content="" />
   <meta name="text:Disqus Shortname" content="" />
   <meta name="text:Google Analytics ID" content="" />  
@@ -17,7 +15,7 @@
   <link rel="alternate" type="application/rss+xml" title="{Title}" href="{RSS}" />
 
   <link rel="stylesheet" href="http://static.tumblr.com/f1whv92/Mp9l6ewcg/reset.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="http://katepressed.s3.amazonaws.com/styles.css" />
   <style type="text/css">
   {CustomCSS}
   </style>
@@ -53,7 +51,7 @@
       
       {block:SearchPage}
       <article>
-         <div>
+         <div class="box">
             <div class="searchPage">
                <h2>Search results for <a href="{URLSafeSearchQuery}">{SearchQuery}</a></h2>
             </div>
@@ -82,6 +80,8 @@
       {block:Posts}
 
         <article class="box">
+          {block:Date}<abbr class="post-date">{ShortMonth} {DayOfMOnth}{DayOfMonthSuffix}, {Year}</abbr>{/block:Date}
+          
           <div>
             {block:Text}
               {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
