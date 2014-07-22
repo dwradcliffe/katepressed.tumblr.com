@@ -6,11 +6,11 @@
 
   <!-- Based on Theme: The Minimalist v1. -->
 
-  <title>{Title}{block:PostSummary} | {PostSummary}{/block:PostSummary}{block:SearchPage} | {lang:Search results for SearchQuery}{/block:SearchPage}</title> 
+  <title>{Title}{block:PostSummary} | {PostSummary}{/block:PostSummary}{block:SearchPage} | {lang:Search results for SearchQuery}{/block:SearchPage}</title>
   <meta name="description" content="{MetaDescription}" />
   <meta name="text:Twitter name" content="" />
   <meta name="text:Disqus Shortname" content="" />
-  <meta name="text:Google Analytics ID" content="" />  
+  <meta name="text:Google Analytics ID" content="" />
   <link rel="shortcut icon" href="{Favicon}" />
   <link rel="alternate" type="application/rss+xml" title="{Title}" href="{RSS}" />
 
@@ -46,8 +46,8 @@
   </header>
 
   <section id="main" class="clearfix">
-    <div class="layout">           
-      
+    <div class="layout">
+
       {block:SearchPage}
       <article>
          <div class="box">
@@ -67,20 +67,20 @@
          </div>
       </article>
       {/block:SearchPage}
-      
+
       {block:TagPage}
       <article class="box">
         <div>
            <h2>Posts tagged <a href="{TagURL}">{Tag}</a></h2>
         </div>
       </article>
-      {/block:TagPage}      
+      {/block:TagPage}
 
       {block:Posts}
 
         <article class="box">
           {block:Date}<abbr class="post-date">{ShortMonth} {DayOfMOnth}{DayOfMonthSuffix}, {Year}</abbr>{/block:Date}
-          
+
           <div>
             {block:Text}
               {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
@@ -107,8 +107,8 @@
               {block:Description}
               <div>{Description}</div>
               {/block:Description}
-            {/block:Link}       
-            
+            {/block:Link}
+
             {block:Chat}
                {block:Title}<h2>{Title}</h2>{/block:Title}
                <ul class="chat">
@@ -124,7 +124,7 @@
                   <div class="audio">{AudioPlayerBlack}</div>
                   </div>
                </div>
-               <div class="audioright"> 
+               <div class="audioright">
                   <div class="audioCaption">{block:Artist}<b>{Artist}</b>{/block:Artist}
   <p>&mdash;{block:TrackName}{TrackName}{/block:TrackName}</p>
                   </div>
@@ -134,19 +134,19 @@
                   {block:Caption}{Caption}{/block:Caption}
                </div>
             {/block:Audio}
-           
+
             {block:Video}
                <div class="media">{Video-500}</div>
-               {block:Caption}<div>{Caption}</div>{/block:Caption} 
+               {block:Caption}<div>{Caption}</div>{/block:Caption}
             {/block:Video}
-            
+
             {block:Answer}
                <h3>{Asker} asked: {Question}</h3>
                {Answer}
             {/block:Answer}
-            
+
             {block:Date}
-   
+
             {block:IfDisqusShortname}
             <script type="text/javascript">
             //<![CDATA[
@@ -163,13 +163,13 @@
             //]]>
             </script>
             {/block:IfDisqusShortname}
-              
+
             {block:PostNotes}
                {PostNotes}
             {/block:PostNotes}
-            
+
             {block:Date}
- 
+
           </div>
         </article>
       {/block:Posts}
@@ -178,24 +178,24 @@
         <nav id="pageNav">
           <ul class="clearfix">
             {block:PreviousPost}<li><a href="{PreviousPost}" id="pageNavNewer">Previous</a></li>{/block:PreviousPost}
-            {block:NextPost}<li><a href="{NextPost}" id="pageNavOlder">Next</a></li>{/block:NextPost}  
+            {block:NextPost}<li><a href="{NextPost}" id="pageNavOlder">Next</a></li>{/block:NextPost}
           </ul>
         </nav>
       {/block:PermalinkPagination}
-      
+
       {block:Pagination}
         <nav id="pageNav">
           <ul class="clearfix">
-            {block:PreviousPage}<li><a href="{PreviousPage}" id="pageNavNewer">Newer</a></li>{/block:PreviousPage} 
+            {block:PreviousPage}<li><a href="{PreviousPage}" id="pageNavNewer">Newer</a></li>{/block:PreviousPage}
             {block:JumpPagination length="5"}
             {block:CurrentPage}<li><a href="{URL}" class="active">{PageNumber}</a></li>{/block:CurrentPage}
             {block:JumpPage}<li><a href="{URL}">{PageNumber}</a></li>{/block:JumpPage}
             {/block:JumpPagination}
-            {block:NextPage}<li><a href="{NextPage}" id="pageNavOlder">Older</a></li>{/block:NextPage} 
+            {block:NextPage}<li><a href="{NextPage}" id="pageNavOlder">Older</a></li>{/block:NextPage}
           </ul>
         </nav>
-      {/block:Pagination} 
-      
+      {/block:Pagination}
+
       {block:DayPagination}
         <nav id="pageNav">
           <ul class="clearfix">
@@ -203,7 +203,7 @@
           </ul>
         </nav>
       {/block:DayPagination}
-     
+
     </div><!-- END layout -->
   </section>
 
