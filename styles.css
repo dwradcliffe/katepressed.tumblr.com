@@ -5,7 +5,7 @@
      }
 
      body {
-        background: #ffffff url(http://static.tumblr.com/zpgzwfl/BgVmklci5/chevron_yellow.png);
+        background: #7ADBC9;
         color: #222;
         font: 12px/20px Georgia, "Times New Roman", Times, serif;
         padding-top: 25px;
@@ -25,12 +25,12 @@
 
      h2 {
         font-size: 31px;
-        line-height: 37px; 
+        line-height: 37px;
      }
 
      h3 {
         font-size: 21px;
-        line-height: 27px; 
+        line-height: 27px;
      }
 
      a:link, a:visited {
@@ -38,7 +38,7 @@
         font-weight: bold;
         text-decoration: none;
      }
-     
+
      a:hover, a:active {
         text-decoration: underline;
      }
@@ -57,7 +57,7 @@
      li{margin-left:30px}
 
      p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:15px}
-     
+
      .box {
         border: 15px solid gray;
         padding: 10px;
@@ -81,7 +81,7 @@
 
      #masthead h1 a:link, #masthead h1 a:visited {
         text-transform: Uppercase;
-        color: #222;
+        color: #808080;
         text-decoration: none;
      }
 
@@ -116,7 +116,7 @@
         margin: 0 15px;
         text-decoration: none;
         color: #222;
-        color: #C29347;
+        color: #7ADBC9;
         font-weight: bold;
         text-transform: Uppercase;
      }
@@ -241,7 +241,7 @@
 
      .audioc {
         background-image:url('http://static.tumblr.com/f1whv92/9iCl6bfgp/audiocircle.png');
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         height: 41px;
         width: 41px;
      }
